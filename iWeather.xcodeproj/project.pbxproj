@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B161E6C1670319000DCB3B2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B161E6B1670319000DCB3B2 /* CFNetwork.framework */; };
+		8B161E6F1670319800DCB3B2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B161E6E1670319800DCB3B2 /* libz.dylib */; };
+		8B161E71167031A400DCB3B2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B161E70167031A400DCB3B2 /* MobileCoreServices.framework */; };
+		8B161E73167031B600DCB3B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B161E72167031B600DCB3B2 /* SystemConfiguration.framework */; };
+		8B161E8E167032EA00DCB3B2 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E76167032EA00DCB3B2 /* NSObject+SBJson.m */; };
+		8B161E8F167032EA00DCB3B2 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E79167032EA00DCB3B2 /* SBJsonParser.m */; };
+		8B161E90167032EA00DCB3B2 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E7B167032EA00DCB3B2 /* SBJsonStreamParser.m */; };
+		8B161E91167032EA00DCB3B2 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E7D167032EA00DCB3B2 /* SBJsonStreamParserAccumulator.m */; };
+		8B161E92167032EA00DCB3B2 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E7F167032EA00DCB3B2 /* SBJsonStreamParserAdapter.m */; };
+		8B161E93167032EA00DCB3B2 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E81167032EA00DCB3B2 /* SBJsonStreamParserState.m */; };
+		8B161E94167032EA00DCB3B2 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E83167032EA00DCB3B2 /* SBJsonStreamWriter.m */; };
+		8B161E95167032EA00DCB3B2 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E85167032EA00DCB3B2 /* SBJsonStreamWriterAccumulator.m */; };
+		8B161E96167032EA00DCB3B2 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E87167032EA00DCB3B2 /* SBJsonStreamWriterState.m */; };
+		8B161E97167032EA00DCB3B2 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E89167032EA00DCB3B2 /* SBJsonTokeniser.m */; };
+		8B161E98167032EA00DCB3B2 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E8B167032EA00DCB3B2 /* SBJsonUTF8Stream.m */; };
+		8B161E99167032EA00DCB3B2 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E8D167032EA00DCB3B2 /* SBJsonWriter.m */; };
+		8B161E9C16705F7800DCB3B2 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B161E9B16705F7800DCB3B2 /* MainView.m */; };
+		8B4B147A166FB0E30001A5C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4B1479166FB0E30001A5C6 /* UIKit.framework */; };
+		8B4B147C166FB0E30001A5C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4B147B166FB0E30001A5C6 /* Foundation.framework */; };
+		8B4B147E166FB0E30001A5C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4B147D166FB0E30001A5C6 /* CoreGraphics.framework */; };
+		8B4B1484166FB0E30001A5C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B4B1482166FB0E30001A5C6 /* InfoPlist.strings */; };
+		8B4B1486166FB0E30001A5C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B1485166FB0E30001A5C6 /* main.m */; };
+		8B4B148A166FB0E30001A5C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B1489166FB0E30001A5C6 /* AppDelegate.m */; };
+		8B4B1492166FB10A0001A5C6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B1491166FB10A0001A5C6 /* MainViewController.m */; };
+		8B4B1495166FB11E0001A5C6 /* WeatherDetailModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B1494166FB11E0001A5C6 /* WeatherDetailModal.m */; };
+		8B4B149F166FB2590001A5C6 /* LeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B149E166FB2590001A5C6 /* LeftView.m */; };
+		8B4B14A2166FB2690001A5C6 /* RightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14A1166FB2690001A5C6 /* RightView.m */; };
+		8B4B14A5166FB2720001A5C6 /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14A4166FB2720001A5C6 /* BottomView.m */; };
+		8B4B14A8166FB3190001A5C6 /* HourlyWeatherFolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14A7166FB3190001A5C6 /* HourlyWeatherFolderView.m */; };
+		8B4B14AB166FB33B0001A5C6 /* MapSemiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14AA166FB33B0001A5C6 /* MapSemiView.m */; };
+		8B4B14AE166FB37E0001A5C6 /* WeeklyWeatherInfoModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14AD166FB37E0001A5C6 /* WeeklyWeatherInfoModal.m */; };
+		8B4B14B1166FB3E90001A5C6 /* CitiesSubscriptionWeatherInfoModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14B0166FB3E80001A5C6 /* CitiesSubscriptionWeatherInfoModal.m */; };
+		8B4B14D3166FB83E0001A5C6 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14BC166FB83E0001A5C6 /* ASIAuthenticationDialog.m */; };
+		8B4B14D4166FB83E0001A5C6 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14BF166FB83E0001A5C6 /* ASIDataCompressor.m */; };
+		8B4B14D5166FB83E0001A5C6 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14C1166FB83E0001A5C6 /* ASIDataDecompressor.m */; };
+		8B4B14D6166FB83E0001A5C6 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14C3166FB83E0001A5C6 /* ASIDownloadCache.m */; };
+		8B4B14D7166FB83E0001A5C6 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14C5166FB83E0001A5C6 /* ASIFormDataRequest.m */; };
+		8B4B14D8166FB83E0001A5C6 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14C7166FB83E0001A5C6 /* ASIHTTPRequest.m */; };
+		8B4B14D9166FB83E0001A5C6 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14CB166FB83E0001A5C6 /* ASIInputStream.m */; };
+		8B4B14DA166FB83E0001A5C6 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14CD166FB83E0001A5C6 /* ASINetworkQueue.m */; };
+		8B4B14DB166FB83E0001A5C6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B14D2166FB83E0001A5C6 /* Reachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B161E6B1670319000DCB3B2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8B161E6E1670319800DCB3B2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8B161E70167031A400DCB3B2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8B161E72167031B600DCB3B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8B161E75167032EA00DCB3B2 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		8B161E76167032EA00DCB3B2 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		8B161E77167032EA00DCB3B2 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		8B161E78167032EA00DCB3B2 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		8B161E79167032EA00DCB3B2 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		8B161E7A167032EA00DCB3B2 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		8B161E7B167032EA00DCB3B2 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		8B161E7C167032EA00DCB3B2 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		8B161E7D167032EA00DCB3B2 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		8B161E7E167032EA00DCB3B2 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		8B161E7F167032EA00DCB3B2 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		8B161E80167032EA00DCB3B2 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		8B161E81167032EA00DCB3B2 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		8B161E82167032EA00DCB3B2 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		8B161E83167032EA00DCB3B2 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		8B161E84167032EA00DCB3B2 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		8B161E85167032EA00DCB3B2 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		8B161E86167032EA00DCB3B2 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		8B161E87167032EA00DCB3B2 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		8B161E88167032EA00DCB3B2 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		8B161E89167032EA00DCB3B2 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		8B161E8A167032EA00DCB3B2 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		8B161E8B167032EA00DCB3B2 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		8B161E8C167032EA00DCB3B2 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		8B161E8D167032EA00DCB3B2 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		8B161E9A16705F7800DCB3B2 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		8B161E9B16705F7800DCB3B2 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		8B4B1475166FB0E30001A5C6 /* iWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4B1479166FB0E30001A5C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8B4B147B166FB0E30001A5C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B4B147D166FB0E30001A5C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8B4B1481166FB0E30001A5C6 /* iWeather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iWeather-Info.plist"; sourceTree = "<group>"; };
+		8B4B1483166FB0E30001A5C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B4B1485166FB0E30001A5C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B4B1487166FB0E30001A5C6 /* iWeather-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iWeather-Prefix.pch"; sourceTree = "<group>"; };
+		8B4B1488166FB0E30001A5C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B4B1489166FB0E30001A5C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B4B1490166FB10A0001A5C6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8B4B1491166FB10A0001A5C6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8B4B1493166FB11E0001A5C6 /* WeatherDetailModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDetailModal.h; sourceTree = "<group>"; };
+		8B4B1494166FB11E0001A5C6 /* WeatherDetailModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDetailModal.m; sourceTree = "<group>"; };
+		8B4B149D166FB2590001A5C6 /* LeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftView.h; sourceTree = "<group>"; };
+		8B4B149E166FB2590001A5C6 /* LeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftView.m; sourceTree = "<group>"; };
+		8B4B14A0166FB2680001A5C6 /* RightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightView.h; sourceTree = "<group>"; };
+		8B4B14A1166FB2690001A5C6 /* RightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightView.m; sourceTree = "<group>"; };
+		8B4B14A3166FB2720001A5C6 /* BottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomView.h; sourceTree = "<group>"; };
+		8B4B14A4166FB2720001A5C6 /* BottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomView.m; sourceTree = "<group>"; };
+		8B4B14A6166FB3190001A5C6 /* HourlyWeatherFolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HourlyWeatherFolderView.h; sourceTree = "<group>"; };
+		8B4B14A7166FB3190001A5C6 /* HourlyWeatherFolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourlyWeatherFolderView.m; sourceTree = "<group>"; };
+		8B4B14A9166FB33B0001A5C6 /* MapSemiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSemiView.h; sourceTree = "<group>"; };
+		8B4B14AA166FB33B0001A5C6 /* MapSemiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSemiView.m; sourceTree = "<group>"; };
+		8B4B14AC166FB37D0001A5C6 /* WeeklyWeatherInfoModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeklyWeatherInfoModal.h; sourceTree = "<group>"; };
+		8B4B14AD166FB37E0001A5C6 /* WeeklyWeatherInfoModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeklyWeatherInfoModal.m; sourceTree = "<group>"; };
+		8B4B14AF166FB3E80001A5C6 /* CitiesSubscriptionWeatherInfoModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesSubscriptionWeatherInfoModal.h; sourceTree = "<group>"; };
+		8B4B14B0166FB3E80001A5C6 /* CitiesSubscriptionWeatherInfoModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesSubscriptionWeatherInfoModal.m; sourceTree = "<group>"; };
+		8B4B14BB166FB83E0001A5C6 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		8B4B14BC166FB83E0001A5C6 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		8B4B14BD166FB83E0001A5C6 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		8B4B14BE166FB83E0001A5C6 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		8B4B14BF166FB83E0001A5C6 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		8B4B14C0166FB83E0001A5C6 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		8B4B14C1166FB83E0001A5C6 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		8B4B14C2166FB83E0001A5C6 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		8B4B14C3166FB83E0001A5C6 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		8B4B14C4166FB83E0001A5C6 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		8B4B14C5166FB83E0001A5C6 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		8B4B14C6166FB83E0001A5C6 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		8B4B14C7166FB83E0001A5C6 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		8B4B14C8166FB83E0001A5C6 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		8B4B14C9166FB83E0001A5C6 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		8B4B14CA166FB83E0001A5C6 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		8B4B14CB166FB83E0001A5C6 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		8B4B14CC166FB83E0001A5C6 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		8B4B14CD166FB83E0001A5C6 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		8B4B14CE166FB83E0001A5C6 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		8B4B14D1166FB83E0001A5C6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8B4B14D2166FB83E0001A5C6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B4B1472166FB0E30001A5C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B161E73167031B600DCB3B2 /* SystemConfiguration.framework in Frameworks */,
+				8B161E71167031A400DCB3B2 /* MobileCoreServices.framework in Frameworks */,
+				8B161E6F1670319800DCB3B2 /* libz.dylib in Frameworks */,
+				8B161E6C1670319000DCB3B2 /* CFNetwork.framework in Frameworks */,
+				8B4B147A166FB0E30001A5C6 /* UIKit.framework in Frameworks */,
+				8B4B147C166FB0E30001A5C6 /* Foundation.framework in Frameworks */,
+				8B4B147E166FB0E30001A5C6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B161E74167032EA00DCB3B2 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				8B161E75167032EA00DCB3B2 /* NSObject+SBJson.h */,
+				8B161E76167032EA00DCB3B2 /* NSObject+SBJson.m */,
+				8B161E77167032EA00DCB3B2 /* SBJson.h */,
+				8B161E78167032EA00DCB3B2 /* SBJsonParser.h */,
+				8B161E79167032EA00DCB3B2 /* SBJsonParser.m */,
+				8B161E7A167032EA00DCB3B2 /* SBJsonStreamParser.h */,
+				8B161E7B167032EA00DCB3B2 /* SBJsonStreamParser.m */,
+				8B161E7C167032EA00DCB3B2 /* SBJsonStreamParserAccumulator.h */,
+				8B161E7D167032EA00DCB3B2 /* SBJsonStreamParserAccumulator.m */,
+				8B161E7E167032EA00DCB3B2 /* SBJsonStreamParserAdapter.h */,
+				8B161E7F167032EA00DCB3B2 /* SBJsonStreamParserAdapter.m */,
+				8B161E80167032EA00DCB3B2 /* SBJsonStreamParserState.h */,
+				8B161E81167032EA00DCB3B2 /* SBJsonStreamParserState.m */,
+				8B161E82167032EA00DCB3B2 /* SBJsonStreamWriter.h */,
+				8B161E83167032EA00DCB3B2 /* SBJsonStreamWriter.m */,
+				8B161E84167032EA00DCB3B2 /* SBJsonStreamWriterAccumulator.h */,
+				8B161E85167032EA00DCB3B2 /* SBJsonStreamWriterAccumulator.m */,
+				8B161E86167032EA00DCB3B2 /* SBJsonStreamWriterState.h */,
+				8B161E87167032EA00DCB3B2 /* SBJsonStreamWriterState.m */,
+				8B161E88167032EA00DCB3B2 /* SBJsonTokeniser.h */,
+				8B161E89167032EA00DCB3B2 /* SBJsonTokeniser.m */,
+				8B161E8A167032EA00DCB3B2 /* SBJsonUTF8Stream.h */,
+				8B161E8B167032EA00DCB3B2 /* SBJsonUTF8Stream.m */,
+				8B161E8C167032EA00DCB3B2 /* SBJsonWriter.h */,
+				8B161E8D167032EA00DCB3B2 /* SBJsonWriter.m */,
+			);
+			path = SBJson;
+			sourceTree = "<group>";
+		};
+		8B4B146A166FB0E20001A5C6 = {
+			isa = PBXGroup;
+			children = (
+				8B161E72167031B600DCB3B2 /* SystemConfiguration.framework */,
+				8B161E70167031A400DCB3B2 /* MobileCoreServices.framework */,
+				8B161E6E1670319800DCB3B2 /* libz.dylib */,
+				8B161E6B1670319000DCB3B2 /* CFNetwork.framework */,
+				8B4B147F166FB0E30001A5C6 /* iWeather */,
+				8B4B1478166FB0E30001A5C6 /* Frameworks */,
+				8B4B1476166FB0E30001A5C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B4B1476166FB0E30001A5C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B4B1475166FB0E30001A5C6 /* iWeather.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B4B1478166FB0E30001A5C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B4B1479166FB0E30001A5C6 /* UIKit.framework */,
+				8B4B147B166FB0E30001A5C6 /* Foundation.framework */,
+				8B4B147D166FB0E30001A5C6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B4B147F166FB0E30001A5C6 /* iWeather */ = {
+			isa = PBXGroup;
+			children = (
+				8B161E74167032EA00DCB3B2 /* SBJson */,
+				8B4B14BA166FB83E0001A5C6 /* ASIHTTPRequst */,
+				8B4B1488166FB0E30001A5C6 /* AppDelegate.h */,
+				8B4B1489166FB0E30001A5C6 /* AppDelegate.m */,
+				8B4B1490166FB10A0001A5C6 /* MainViewController.h */,
+				8B4B1491166FB10A0001A5C6 /* MainViewController.m */,
+				8B161E9A16705F7800DCB3B2 /* MainView.h */,
+				8B161E9B16705F7800DCB3B2 /* MainView.m */,
+				8B4B14A6166FB3190001A5C6 /* HourlyWeatherFolderView.h */,
+				8B4B14A7166FB3190001A5C6 /* HourlyWeatherFolderView.m */,
+				8B4B149D166FB2590001A5C6 /* LeftView.h */,
+				8B4B149E166FB2590001A5C6 /* LeftView.m */,
+				8B4B14A0166FB2680001A5C6 /* RightView.h */,
+				8B4B14A1166FB2690001A5C6 /* RightView.m */,
+				8B4B14A3166FB2720001A5C6 /* BottomView.h */,
+				8B4B14A4166FB2720001A5C6 /* BottomView.m */,
+				8B4B14A9166FB33B0001A5C6 /* MapSemiView.h */,
+				8B4B14AA166FB33B0001A5C6 /* MapSemiView.m */,
+				8B4B1493166FB11E0001A5C6 /* WeatherDetailModal.h */,
+				8B4B1494166FB11E0001A5C6 /* WeatherDetailModal.m */,
+				8B4B14AC166FB37D0001A5C6 /* WeeklyWeatherInfoModal.h */,
+				8B4B14AD166FB37E0001A5C6 /* WeeklyWeatherInfoModal.m */,
+				8B4B14AF166FB3E80001A5C6 /* CitiesSubscriptionWeatherInfoModal.h */,
+				8B4B14B0166FB3E80001A5C6 /* CitiesSubscriptionWeatherInfoModal.m */,
+				8B4B1480166FB0E30001A5C6 /* Supporting Files */,
+			);
+			path = iWeather;
+			sourceTree = "<group>";
+		};
+		8B4B1480166FB0E30001A5C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B4B1481166FB0E30001A5C6 /* iWeather-Info.plist */,
+				8B4B1482166FB0E30001A5C6 /* InfoPlist.strings */,
+				8B4B1485166FB0E30001A5C6 /* main.m */,
+				8B4B1487166FB0E30001A5C6 /* iWeather-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B4B14BA166FB83E0001A5C6 /* ASIHTTPRequst */ = {
+			isa = PBXGroup;
+			children = (
+				8B4B14BB166FB83E0001A5C6 /* ASIAuthenticationDialog.h */,
+				8B4B14BC166FB83E0001A5C6 /* ASIAuthenticationDialog.m */,
+				8B4B14BD166FB83E0001A5C6 /* ASICacheDelegate.h */,
+				8B4B14BE166FB83E0001A5C6 /* ASIDataCompressor.h */,
+				8B4B14BF166FB83E0001A5C6 /* ASIDataCompressor.m */,
+				8B4B14C0166FB83E0001A5C6 /* ASIDataDecompressor.h */,
+				8B4B14C1166FB83E0001A5C6 /* ASIDataDecompressor.m */,
+				8B4B14C2166FB83E0001A5C6 /* ASIDownloadCache.h */,
+				8B4B14C3166FB83E0001A5C6 /* ASIDownloadCache.m */,
+				8B4B14C4166FB83E0001A5C6 /* ASIFormDataRequest.h */,
+				8B4B14C5166FB83E0001A5C6 /* ASIFormDataRequest.m */,
+				8B4B14C6166FB83E0001A5C6 /* ASIHTTPRequest.h */,
+				8B4B14C7166FB83E0001A5C6 /* ASIHTTPRequest.m */,
+				8B4B14C8166FB83E0001A5C6 /* ASIHTTPRequestConfig.h */,
+				8B4B14C9166FB83E0001A5C6 /* ASIHTTPRequestDelegate.h */,
+				8B4B14CA166FB83E0001A5C6 /* ASIInputStream.h */,
+				8B4B14CB166FB83E0001A5C6 /* ASIInputStream.m */,
+				8B4B14CC166FB83E0001A5C6 /* ASINetworkQueue.h */,
+				8B4B14CD166FB83E0001A5C6 /* ASINetworkQueue.m */,
+				8B4B14CE166FB83E0001A5C6 /* ASIProgressDelegate.h */,
+				8B4B14CF166FB83E0001A5C6 /* External */,
+			);
+			path = ASIHTTPRequst;
+			sourceTree = "<group>";
+		};
+		8B4B14CF166FB83E0001A5C6 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				8B4B14D0166FB83E0001A5C6 /* Reachability */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		8B4B14D0166FB83E0001A5C6 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				8B4B14D1166FB83E0001A5C6 /* Reachability.h */,
+				8B4B14D2166FB83E0001A5C6 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B4B1474166FB0E30001A5C6 /* iWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B4B148D166FB0E30001A5C6 /* Build configuration list for PBXNativeTarget "iWeather" */;
+			buildPhases = (
+				8B4B1471166FB0E30001A5C6 /* Sources */,
+				8B4B1472166FB0E30001A5C6 /* Frameworks */,
+				8B4B1473166FB0E30001A5C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iWeather;
+			productName = iWeather;
+			productReference = 8B4B1475166FB0E30001A5C6 /* iWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B4B146C166FB0E20001A5C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "开发者";
+			};
+			buildConfigurationList = 8B4B146F166FB0E20001A5C6 /* Build configuration list for PBXProject "iWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8B4B146A166FB0E20001A5C6;
+			productRefGroup = 8B4B1476166FB0E30001A5C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B4B1474166FB0E30001A5C6 /* iWeather */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B4B1473166FB0E30001A5C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4B1484166FB0E30001A5C6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B4B1471166FB0E30001A5C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4B1486166FB0E30001A5C6 /* main.m in Sources */,
+				8B4B148A166FB0E30001A5C6 /* AppDelegate.m in Sources */,
+				8B4B1492166FB10A0001A5C6 /* MainViewController.m in Sources */,
+				8B4B1495166FB11E0001A5C6 /* WeatherDetailModal.m in Sources */,
+				8B4B149F166FB2590001A5C6 /* LeftView.m in Sources */,
+				8B4B14A2166FB2690001A5C6 /* RightView.m in Sources */,
+				8B4B14A5166FB2720001A5C6 /* BottomView.m in Sources */,
+				8B4B14A8166FB3190001A5C6 /* HourlyWeatherFolderView.m in Sources */,
+				8B4B14AB166FB33B0001A5C6 /* MapSemiView.m in Sources */,
+				8B4B14AE166FB37E0001A5C6 /* WeeklyWeatherInfoModal.m in Sources */,
+				8B4B14B1166FB3E90001A5C6 /* CitiesSubscriptionWeatherInfoModal.m in Sources */,
+				8B4B14D3166FB83E0001A5C6 /* ASIAuthenticationDialog.m in Sources */,
+				8B4B14D4166FB83E0001A5C6 /* ASIDataCompressor.m in Sources */,
+				8B4B14D5166FB83E0001A5C6 /* ASIDataDecompressor.m in Sources */,
+				8B4B14D6166FB83E0001A5C6 /* ASIDownloadCache.m in Sources */,
+				8B4B14D7166FB83E0001A5C6 /* ASIFormDataRequest.m in Sources */,
+				8B4B14D8166FB83E0001A5C6 /* ASIHTTPRequest.m in Sources */,
+				8B4B14D9166FB83E0001A5C6 /* ASIInputStream.m in Sources */,
+				8B4B14DA166FB83E0001A5C6 /* ASINetworkQueue.m in Sources */,
+				8B4B14DB166FB83E0001A5C6 /* Reachability.m in Sources */,
+				8B161E8E167032EA00DCB3B2 /* NSObject+SBJson.m in Sources */,
+				8B161E8F167032EA00DCB3B2 /* SBJsonParser.m in Sources */,
+				8B161E90167032EA00DCB3B2 /* SBJsonStreamParser.m in Sources */,
+				8B161E91167032EA00DCB3B2 /* SBJsonStreamParserAccumulator.m in Sources */,
+				8B161E92167032EA00DCB3B2 /* SBJsonStreamParserAdapter.m in Sources */,
+				8B161E93167032EA00DCB3B2 /* SBJsonStreamParserState.m in Sources */,
+				8B161E94167032EA00DCB3B2 /* SBJsonStreamWriter.m in Sources */,
+				8B161E95167032EA00DCB3B2 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				8B161E96167032EA00DCB3B2 /* SBJsonStreamWriterState.m in Sources */,
+				8B161E97167032EA00DCB3B2 /* SBJsonTokeniser.m in Sources */,
+				8B161E98167032EA00DCB3B2 /* SBJsonUTF8Stream.m in Sources */,
+				8B161E99167032EA00DCB3B2 /* SBJsonWriter.m in Sources */,
+				8B161E9C16705F7800DCB3B2 /* MainView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8B4B1482166FB0E30001A5C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B4B1483166FB0E30001A5C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B4B148B166FB0E30001A5C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B4B148C166FB0E30001A5C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B4B148E166FB0E30001A5C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iWeather/iWeather-Prefix.pch";
+				INFOPLIST_FILE = "iWeather/iWeather-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8B4B148F166FB0E30001A5C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iWeather/iWeather-Prefix.pch";
+				INFOPLIST_FILE = "iWeather/iWeather-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B4B146F166FB0E20001A5C6 /* Build configuration list for PBXProject "iWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4B148B166FB0E30001A5C6 /* Debug */,
+				8B4B148C166FB0E30001A5C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B4B148D166FB0E30001A5C6 /* Build configuration list for PBXNativeTarget "iWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4B148E166FB0E30001A5C6 /* Debug */,
+				8B4B148F166FB0E30001A5C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B4B146C166FB0E20001A5C6 /* Project object */;
+}
